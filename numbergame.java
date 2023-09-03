@@ -7,9 +7,9 @@ public class numbergame {
    Random n = new Random();
    int number;
      number = n.nextInt(100);
-     System.out.println(number);
-         int i=0;
-       for(i=1;i<=5;i++) {
+     System.out.println(number); // you can delete this statement if want to hide the random number.
+         int i;
+       for(i=0;i<5;i++) {
            System.out.println(" Guess the number between 1-100");
 
            int a = input.nextInt();
@@ -25,7 +25,7 @@ public class numbergame {
            }
 
        }
-           System.out.println("Number of attempts left: "+i);
+      System.out.println("Number of attempts made: "+i);
   }
 }
 
